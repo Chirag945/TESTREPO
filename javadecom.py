@@ -30,51 +30,7 @@ class JavaCodeExtractor:
         - Implemented Interfaces (name only)
         - Sub Class (name only)
         - Implementation (Body of the Class)
-        - Brief description
-        - Annotations
 
-        Interfaces:
-        - Name
-        - Enclosing class (name only)
-        - Modifiers (e.g., public, private, abstract, static)
-        - Methods (name only)
-        - Default methods (name only)
-        - Implementation (Body of the interface)
-        - Brief description
-        - Annotations
-
-        Methods:
-        - Name
-        - Enclosing class/interface (name only)
-        - Modifiers (e.g., public, private, static, final, synchronized, native, abstract)
-        - Return type
-        - Parameters (with types)
-        - Throws declarations
-        - Implementation (Body of the method)
-        - Brief description
-        - Annotations
-
-        Constructors:
-        - Name
-        - Enclosing class (name only)
-        - Modifiers (e.g., public, private, protected)
-        - Parameters (with types)
-        - Throws declarations
-        - Implementation (Body of the constructor)
-        - Brief description
-        - Annotations
-
-        Fields:
-        - Name
-        -Enclosing class
-        - Type
-        - Modifiers (e.g., public, private, static, final, volatile, transient)
-        - Initial value
-        - Implementation (Field declaration line)
-        - Usage context
-        - Annotations
-
-        Imports:
         - Package name
         - Static imports
 
@@ -173,20 +129,6 @@ if __name__ == "__main__":
     
 #     def process_components(self, json_response):
 #         prompt = create_component_extraction_prompt(json_response)
-#         response = self.chatgroq.invoke(prompt)
-#         try:
-#             return json.loads(response.content)
-#         except json.JSONDecodeError:
-#             return response.content
 
-
-if __name__ == "__main__":
-    extractor = JavaCodeExtractor(model_name="llama-3.3-70b-versatile", api_key="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")
-    json_result = extractor.extract_components(java_code)
-    # editedreult=json_result.strip("json`")
-    
-    print (json_result)
-    # print("\n\n")
-    # print(editedreult)
     
     
