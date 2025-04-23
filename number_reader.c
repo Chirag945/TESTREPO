@@ -2,27 +2,7 @@
 #include <sys/time.h>
 
 void insertionSortR(int *arr, int n)
-{
-{
-int last = arr[i];
-int j = i-1;
-while (j >= 0 && arr[j] > last)
-{
-arr[j+1] = arr[j];
-j--;
-}
-arr[j+1] = last;
-}
-}
-int helper(char* fname,int n)
-{
-    // Reads the numbers stored in numbers1000.txt and stores them into an integer array
-    FILE *fp = fopen(fname, "r");
-    int numbers[n];
-    int i = 0;
-    while (fscanf(fp, "%d", &numbers[i]) != EOF)
-    {
-        i++;
+
     }
     fclose(fp);
     struct timeval t1, t2;
