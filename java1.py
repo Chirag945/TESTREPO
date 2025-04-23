@@ -39,18 +39,7 @@
         
         @Override
         public String getType() {
-            return "Land";
-        }
-        
-        @Override
-        public void performMaintenance() {
-            System.out.println("Performing electric car maintenance");
-            batteryLevel = 100;
-        }
-        
-        public synchronized int getBatteryLevel() {
-            return batteryLevel;
-        }
+ 
         
         @Deprecated
         public void oldMethod() throws IllegalStateException {
