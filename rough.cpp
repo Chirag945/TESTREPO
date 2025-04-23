@@ -12,16 +12,7 @@ typedef vector<vector<int> > vvi;
 typedef vector<pair<int, int>> vpi;
 const char nl = '\n';
 const double eps = 1e-6;
-const int N = 1e5, mod = 1e9 + 7, inf = 1e18;
-#define yay cout<<"YES\n"
-#define nay cout<<"NO\n"
-#define vin(v) for(auto&x:v)cin>>x;
-#define print(v) for(auto x:v) cout<<x<<" "; cout<<"\n";
 
-void solve() {
-    bool ans1=true,ans2=true;
-    int n; cin>>n;
-    vi v(n); vin(v);
     for(int i=0;i<n;i++){
         if(((n-i-1)*2)<v[i]) ans1=false;
     }
@@ -32,11 +23,6 @@ void solve() {
     else nay;
     return;
 }
-
-int32_t main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0); cout.tie(0);
-    int T = 1;
    cin >> T;//Comment this out in case number of test cases are not to be taken as input.
     for(int I = 1; I <= T; I++) {
          
