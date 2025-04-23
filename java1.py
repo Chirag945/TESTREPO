@@ -1,23 +1,4 @@
 
-        default void logMaintenance() {
-            System.out.println("Maintenance performed at: " + System.currentTimeMillis());
-        }
-    }
-
-    public interface Vehicle {
-        void start();
-        void stop();
-        String getType();
-    }
-
-    @Component
-    public abstract class AbstractVehicle implements Vehicle, Maintainable 
-    {
-        protected final String manufacturer;
-        private volatile boolean running;
-        private static final List<String> VALID_TYPES;
-rting");
-        }
         
         @Override
         public void stop() {
