@@ -1,14 +1,4 @@
-code="""package com.example.vehicles;
 
-    import java.util.List;
-    import java.util.ArrayList;
-    import static java.util.Collections.unmodifiableList;
-    import org.springframework.stereotype.Component;
-
-    @FunctionalInterface
-    public interface Maintainable {
-        void performMaintenance();
-        
         default void logMaintenance() {
             System.out.println("Maintenance performed at: " + System.currentTimeMillis());
         }
@@ -26,23 +16,7 @@ code="""package com.example.vehicles;
         protected final String manufacturer;
         private volatile boolean running;
         private static final List<String> VALID_TYPES;
-        
-        static {
-            List<String> types = new ArrayList<>();
-            types.add("Land");
-            types.add("Air");
-            types.add("Water");
-            VALID_TYPES = unmodifiableList(types);
-        }
-        
-        protected AbstractVehicle(String manufacturer) {
-            this.manufacturer = manufacturer;
-        }
-        
-        @Override
-        public synchronized void start() {
-            running = true;
-            System.out.println("Vehicle starting");
+rting");
         }
         
         @Override
