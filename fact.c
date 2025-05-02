@@ -1,40 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <sys/time.h>
-int factNTR(int n) {
-if (n == 0)
-{
-return 1;
-}
-else
-{
-return n * factNTR(n - 1);
-}
-}
-int factTR(int n, int acc) {
-if (n == 0)
-{
-return acc;
-}
-else
-{
-return factTR(n - 1, n * acc);
-}}
 
-int factI(int n)
-{
-int acc = 1;
-while (n > 0)
-{
-acc = acc * n;
-n = n - 1;
-}
-return acc;
-}
-
-int main(){
-	int n=9000;
-	struct timeval t1, t2,t3,t4,t5,t6;
     double time_taken;
     gettimeofday(&t1, NULL);
 	printf("Non tail recursive answer - %d\n",factNTR(n));
